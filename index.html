@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sertifika Oluşturucu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="background.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+
+  <div class="form-container">
+    <h2>Sertifikanızı Oluşturun</h2>
+    <input type="text" id="fullname" placeholder="İsim Soyisim" />
+    <button onclick="generateCertificate()">Sertifikayı Oluştur</button>
+  </div>
+
+  <canvas id="certificateCanvas" style="display:none;"></canvas>
+
+  <script src="jsPDF.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
